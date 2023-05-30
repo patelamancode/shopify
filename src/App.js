@@ -9,9 +9,13 @@ import Wishlist from "./pages/Wishlist";
 import Footer from "./components/footer/Footer";
 import {Routes, Route} from "react-router-dom";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Mockman from "mockman-js";
 
 
 function App() {
+
+
     return (
         <div className="App">
             <Header/>
@@ -20,13 +24,20 @@ function App() {
                     element={<Home/>}/>
                 <Route path="/products"
                     element={<Products/>}/>
-                <Route path="/product"
+                <Route path="/product/:id"
                     element={<Product/>}/>
                 <Route path="/cart"
                     element={<Cart/>}/>
                 <Route path="/wishlist"
-                    element={<Wishlist/>}/> {/* <Route path="/login"
-                    element={<Login/>}/> */} </Routes>
+                    element={<Wishlist/>}/>
+                <Route path="/login"
+                    element={<Login/>}/>
+                <Route path="/signup"
+                    element={<Signup/>}/>
+                <Route path='/mockman'
+                    element={<Mockman/>}/>
+
+            </Routes>
             <Footer/>
         </div>
     );
