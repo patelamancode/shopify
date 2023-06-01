@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from '../components/hero/Hero'
 import Collection from '../components/productGallery/Collection'
 import Category from '../components/category/Category'
-import Statistic from '../components/statistics/Statistic'
 
 const Home = () => {
     return (
@@ -14,8 +13,6 @@ const Home = () => {
             <Category/>
             <h2 className='text-4xl font-bold text-center'>Product Collection</h2>
             <Collection/>
-            <h2 className='text-4xl font-bold text-center'>Statistic</h2>
-            <Statistic/>
         </>
     )
 }
